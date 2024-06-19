@@ -1,0 +1,34 @@
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Filled                   ║ Mixins                                                                                  ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Text (Normal)
+@mixin text-normal($item-id) {
+  .item-1OdjEX##{$item-id}.colorDefault-CDqZdO .label-2gNW3x {
+    color: var(--context-text-normal);
+  }
+}
+
+// Text (Hover)
+@mixin text-hover($item-id) {
+  .item-1OdjEX##{$item-id}.colorDefault-CDqZdO.focused-3qFvc8 .label-2gNW3x {
+    color: var(--context-text-hover);
+  }
+}
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Base                     ║ Text Color Fix                                                                          ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Invite People (Channel)
+@include text-normal(channel-context-invite-people);
+@include text-hover(channel-context-invite-people);
+
+// Invite People (Guild)
+@include text-normal(guild-header-popout-invite-people);
+@include text-hover(guild-header-popout-invite-people);
+
+// Invite People (Server)
+@include text-normal(guild-context-invite-people);
+@include text-hover(guild-context-invite-people);
+

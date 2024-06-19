@@ -1,0 +1,140 @@
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Filled                   ║ Mixins                                                                                  ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Danger Background (Normal)
+@mixin danger-background-normal($item-id) {
+  .item-1OdjEX##{$item-id}.colorDefault-CDqZdO {
+    background: var(--danger-background-normal);
+    border-radius: var(--danger-background-radius);
+    color: var(--danger-text-normal);
+  }
+}
+
+// Danger Background (Hover)
+@mixin danger-background-hover($item-id) {
+  .item-1OdjEX##{$item-id}.colorDefault-CDqZdO.focused-3qFvc8 {
+    background: var(--danger-background-hover);
+    border-radius: var(--danger-background-radius);
+    color: var(--danger-text-focused);
+  }
+}
+
+// Danger Icon (Normal)
+@mixin danger-icon-normal($item-id) {
+  .item-1OdjEX##{$item-id}.colorDefault-CDqZdO::before {
+    background: var(--danger-icon-normal);
+  }
+}
+
+// Danger Icon (Hover)
+@mixin danger-icon-hover($item-id) {
+  .item-1OdjEX##{$item-id}.colorDefault-CDqZdO.focused-3qFvc8::before {
+    background: var(--danger-icon-focused);
+  }
+}
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Base                     ║ Button                                                                                  ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+.colorDefault-CDqZdO.focused-3qFvc8 {
+  border-radius: var(--context-button-radius);
+  color: var(--context-icon-focused);
+}
+
+.colorDefault-CDqZdO.focused-3qFvc8.item-1OdjEX::before {
+  background: var(--context-icon-focused);
+}
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Base                     ║ Danger Background                                                                       ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Normal
+@include danger-background-normal(message-delete);
+@include danger-background-normal(message-actions-delete);
+@include danger-background-normal(channel-context-delete-channel);
+@include danger-background-normal(user-context-kick);
+@include danger-background-normal(user-context-ban);
+@include danger-background-normal(guild-context-leave-guild);
+@include danger-background-normal(guild-header-popout-leave);
+@include danger-background-normal(thread-context-delete-channel);
+@include danger-background-normal(user-profile-actions-user-remove);
+@include danger-background-normal(user-profile-actions-user-block);
+@include danger-background-normal(friend-row-remove-friend);
+@include danger-background-normal(user-context-voice-mute);
+@include danger-background-normal(user-context-voice-deafen);
+@include danger-background-normal(undefined-delete);
+@include danger-background-normal(message-report);
+@include danger-background-normal(message-remove-reactions);
+@include danger-background-normal(guild-settings-role-context-delete-role);
+@include danger-background-normal(guild-entry-context-remove-from-hub);
+@include danger-background-normal(guild-entry-context-report-server-listing);
+
+// Hover
+@include danger-background-hover(message-delete);
+@include danger-background-hover(message-actions-delete);
+@include danger-background-hover(channel-context-delete-channel);
+@include danger-background-hover(user-context-kick);
+@include danger-background-hover(user-context-ban);
+@include danger-background-hover(guild-context-leave-guild);
+@include danger-background-hover(guild-header-popout-leave);
+@include danger-background-hover(thread-context-delete-channel);
+@include danger-background-hover(user-profile-actions-user-remove);
+@include danger-background-hover(user-profile-actions-user-block);
+@include danger-background-hover(friend-row-remove-friend);
+@include danger-background-hover(user-context-voice-mute);
+@include danger-background-hover(user-context-voice-deafen);
+@include danger-background-hover(undefined-delete);
+@include danger-background-hover(message-report);
+@include danger-background-hover(message-remove-reactions);
+@include danger-background-hover(guild-settings-role-context-delete-role);
+@include danger-background-hover(guild-entry-context-remove-from-hub);
+@include danger-background-hover(guild-entry-context-report-server-listing);
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Base                     ║ Danger Icon                                                                             ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Normal
+@include danger-icon-normal(message-delete);
+@include danger-icon-normal(message-actions-delete);
+@include danger-icon-normal(channel-context-delete-channel);
+@include danger-icon-normal(user-context-kick);
+@include danger-icon-normal(user-context-ban);
+@include danger-icon-normal(guild-context-leave-guild);
+@include danger-icon-normal(guild-header-popout-leave);
+@include danger-icon-normal(thread-context-delete-channel);
+@include danger-icon-normal(user-profile-actions-user-remove);
+@include danger-icon-normal(user-profile-actions-user-block);
+@include danger-icon-normal(friend-row-remove-friend);
+@include danger-icon-normal(user-context-voice-mute);
+@include danger-icon-normal(user-context-voice-deafen);
+@include danger-icon-normal(undefined-delete);
+@include danger-icon-normal(message-report);
+@include danger-icon-normal(message-remove-reactions);
+@include danger-icon-normal(guild-settings-role-context-delete-role);
+@include danger-icon-normal(guild-entry-context-remove-from-hub);
+@include danger-icon-normal(guild-entry-context-report-server-listing);
+
+// Hover
+@include danger-icon-hover(message-delete);
+@include danger-icon-hover(message-actions-delete);
+@include danger-icon-hover(channel-context-delete-channel);
+@include danger-icon-hover(user-context-kick);
+@include danger-icon-hover(user-context-ban);
+@include danger-icon-hover(guild-context-leave-guild);
+@include danger-icon-hover(guild-header-popout-leave);
+@include danger-icon-hover(thread-context-delete-channel);
+@include danger-icon-hover(user-profile-actions-user-remove);
+@include danger-icon-hover(user-profile-actions-user-block);
+@include danger-icon-hover(friend-row-remove-friend);
+@include danger-icon-hover(user-context-voice-mute);
+@include danger-icon-hover(user-context-voice-deafen);
+@include danger-icon-hover(undefined-delete);
+@include danger-icon-hover(message-report);
+@include danger-icon-hover(message-remove-reactions);
+@include danger-icon-hover(guild-settings-role-context-delete-role);
+@include danger-icon-hover(guild-entry-context-remove-from-hub);
+@include danger-icon-hover(guild-entry-context-report-server-listing);

@@ -1,0 +1,8 @@
+{
+    "name": "CreArts | Context-Icons",
+    "version": "1.0.1",
+    "author": "CorellanStoma#1996",
+    "description": "Context Icons adds icons to the discord context menu's.",
+    "license": "MIT",
+    "theme": "clients/vizality.css"
+}

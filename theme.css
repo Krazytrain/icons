@@ -1,0 +1,94 @@
+/* ╔════════════════════════════════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ Discord Addon                                                                                                      ║ */
+/* ╠══════════════════════════╦═════════════════════════════════════════════════════════════════════════════════════════╣ */
+/* ║ Theme:                   ║ Context Icons                                                                           ║ */
+/* ║ Author:                  ║ CorellanStoma#1996                                                                      ║ */
+/* ║ Support:                 ║ https://discord.gg/8W8E39Z                                                              ║ */
+/* ╠══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╣ */
+/* ║                                                                                                                    ║ */
+/* ║ Context Icons adds icons to the discord context menu's.                                                            ║ */
+/* ║ This Project was created by CorellanStoma#1996.                                                                    ║ */
+/* ║                                                                                                                    ║ */
+/* ╚════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+/* 🧪 Experimental
+/* ✔️ Activated by default
+/* ❌ Disabled by default
+/* ⚠️ Do not touch!
+
+/* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ Import                   ║ Do not comment out these lines! By disabling the theme can not work correctly.          ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+@import url("https://crearts-community.github.io/Context-Icons/src/source.css"); /* ⚠️ Warning!! Do not disable it! */
+
+/* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ General                  ║ Here you can make general adjustments.                                                  ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+:root {
+  --context-icon-size: 21px;
+  --context-menu-width: inherit;
+  --context-menu-radius: 8px;
+  --context-menu-spacing: 0px;
+  --context-button-radius: 4px;
+  --context-icon-spacing: 8px;
+  --context-settings-height: 60vh;
+  --context-disabled-opacity: 0.3;
+
+  --separator-spacing-height: 4px;
+  --separator-spacing-width: 2px;
+
+  --danger-background-radius: 4px;
+  --slider-background-radius: 4px;
+}
+
+/* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ Dark                     ║ Here you can make some adjustments for the dark theme.                                  ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+.theme-dark {
+  --context-icon-normal: var(--interactive-normal);
+  --context-icon-focused: white;
+  --context-text-normal: var(--interactive-normal);
+  --context-text-focused: white;
+  --context-separator: var(--background-secondary-alt);
+
+  --slider-icon-color: var(--interactive-normal);
+  --slider-bar-color: var(--interactive-normal);
+  --slider-graber-color: var(--interactive-normal);
+  --slider-background-normal: var(--background-tertiary);
+  --slider-background-hover: var(--background-secondary-alt);
+
+  --danger-icon-normal: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+  --danger-icon-focused: white;
+  --danger-text-normal: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+  --danger-text-focused: white;
+  --danger-background-normal: transparent;
+  --danger-background-hover: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+}
+
+/* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
+/* ║ Light                    ║ These are the variables for the Light theme.                                            ║ */
+/* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+.theme-light {
+  --context-icon-normal: var(--interactive-normal);
+  --context-icon-focused: white;
+  --context-text-normal: var(--interactive-normal);
+  --context-text-focused: white;
+  --context-separator: var(--background-secondary-alt);
+
+  --slider-icon-color: var(--interactive-normal);
+  --slider-bar-color: var(--interactive-normal);
+  --slider-graber-color: var(--interactive-normal);
+  --slider-background-normal: var(--background-tertiary);
+  --slider-background-hover: var(--background-secondary-alt);
+
+  --danger-icon-normal: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+  --danger-icon-focused: white;
+  --danger-text-normal: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+  --danger-text-focused: white;
+  --danger-background-normal: transparent;
+  --danger-background-hover: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+}
